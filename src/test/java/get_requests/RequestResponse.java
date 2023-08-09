@@ -26,7 +26,7 @@ public class RequestResponse {
      */
 
     public static void main(String[] args) {
-        String url = "https://petstore.swagger.io/v2/pet/9898";
+        String url = "https://petstore.swagger.io/v2/pet/999";
         Response response = given().when().get(url);
      //  response.prettyPrint();
 
@@ -54,6 +54,7 @@ public class RequestResponse {
         System.out.println("__________________________");
         // Time nasıl yazdırılır?
         System.out.println("Time: " + response.time());
+
     }
 
 }
