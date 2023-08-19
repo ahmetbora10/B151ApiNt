@@ -26,9 +26,9 @@ public class RequestResponse {
      */
 
     public static void main(String[] args) {
-        String url = "https://petstore.swagger.io/v2/pet/999";
+        String url = "https://petstore.swagger.io/v2/pet/3435";
         Response response = given().when().get(url);
-     //  response.prettyPrint();
+      response.prettyPrint();
 
        //Status code nasil yazdirilir
         System.out.println("status  code:" + response.statusCode());
@@ -54,6 +54,26 @@ public class RequestResponse {
         System.out.println("__________________________");
         // Time nasıl yazdırılır?
         System.out.println("Time: " + response.time());
+         /*
+        Request ==> istek
+        Response ==> istege gonderilen cevap
+        Status code = Gelen cevabin basari durumu
+        Post ==> creat ==> Request olusturma islemi => Istek olusturma
+        Get ==> read ==>Request sorgulama => Istegin olusup olusmadigini veya
+        verilen url deki bilgilerin dogrulugunu sorgulama
+        Put ==> update ==> Request i update etme => Istegi guncelleme
+        Delete ==> delete ==> Request'i delete etme => Istegi silme islemi
+        Bu islemlere kisaca CRUD islemleri denir
+         */
+        //Status Code nasil yazdirilir?
+        System.out.println("Status code: "+response.statusCode());
+
+        //Content Type nasil yazdirilir?
+        System.out.println("Content type: "+response.contentType());
+
+
+        //Status Line nasil yazdirilir?     ==> Status Code ile birbirine benzer bu sadece HTTP protokol versiyonunu da verir
+        System.out.println("Status line: " + response.statusLine());
 
     }
 
