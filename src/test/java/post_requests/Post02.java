@@ -1,6 +1,6 @@
 package post_requests;
 
-import base_urls.HerokuuAppBaseUrl;
+import base_urls.HerokuAppBaseUrl;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Test;
@@ -13,7 +13,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
-public class Post02 extends HerokuuAppBaseUrl {
+public class Post02 extends HerokuAppBaseUrl {
     /*
     Given
             1) https://restful-booker.herokuapp.com/booking

@@ -1,17 +1,17 @@
-package Pojos;
+package pojos;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class BookingResposePojo {
+public class BookingResponsePojo {
 
     private Integer bookingid;
     private BookingPojo booking;
 
-    public BookingResposePojo() {
+    public BookingResponsePojo() {
     }
 
-    public BookingResposePojo(Integer bookingid, BookingPojo booking) {
+    public BookingResponsePojo(Integer bookingid, BookingPojo booking) {
         this.bookingid = bookingid;
         this.booking = booking;
     }

@@ -1,5 +1,5 @@
 package get_requests;
-import base_urls.HerokuuAppBaseUrl;
+import base_urls.HerokuAppBaseUrl;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Test;
@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static junit.framework.TestCase.assertEquals;
-public class Get09 extends HerokuuAppBaseUrl {
+public class Get09 extends HerokuAppBaseUrl {
     /*
     Given
         https://restful-booker.herokuapp.com/booking/92

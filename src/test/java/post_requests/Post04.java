@@ -1,16 +1,15 @@
 package post_requests;
 
-import Pojos.BookingResposePojo;
-import base_urls.GoRestBaseUrl;
-import base_urls.HerokuuAppBaseUrl;
+import pojos.BookingResponsePojo;
+import base_urls.HerokuAppBaseUrl;
 import io.restassured.response.Response;
 import org.junit.Test;
-import Pojos.BookingDatesPojo;
-import Pojos.BookingPojo;
-import Pojos.BookingResposePojo;
+import pojos.BookingDatesPojo;
+import pojos.BookingPojo;
+
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
-public class Post04 extends HerokuuAppBaseUrl {
+public class Post04 extends HerokuAppBaseUrl {
     /*
         Given
           1)  https://restful-booker.herokuapp.com/booking
@@ -58,7 +57,7 @@ public class Post04 extends HerokuuAppBaseUrl {
         Response response = given(spec).body(expectedData).when().post("{first}");
         response.prettyPrint();
         // Do assertion
-        BookingResposePojo actualData = response.as(BookingResposePojo.class);
+        BookingResponsePojo actualData = response.as(BookingResponsePojo.class);
         System.out.println(actualData);
         assertEquals(200, response.statusCode());
         assertEquals(expectedData.getFirstname(), actualData.getBooking().getFirstname());

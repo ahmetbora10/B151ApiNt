@@ -1,10 +1,9 @@
 package post_requests;
 
 import base_urls.JsonPlaceHolderBaseUrl;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.response.Response;
 import org.junit.Test;
-import Pojos.JsonPlaceHolderPojo;
+import pojos.JsonPlaceHolderPojo;
 import utils.ObjectMapperUtils;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;

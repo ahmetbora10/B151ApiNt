@@ -3,8 +3,8 @@ package get_requests;
 import base_urls.GoRestBaseUrl;
 import io.restassured.response.Response;
 import org.junit.Test;
-import Pojos.GoRestDataPojo;
-import Pojos.GoRestPojo;
+import pojos.GoRestDataPojo;
+import pojos.GoRestPojo;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 public class Get12 extends GoRestBaseUrl {

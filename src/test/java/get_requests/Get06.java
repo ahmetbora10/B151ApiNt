@@ -1,6 +1,6 @@
 package get_requests;
 
-import base_urls.HerokuuAppBaseUrl;
+import base_urls.HerokuAppBaseUrl;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.request;
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertEquals;
 import org.testng.asserts.SoftAssert;
-public class Get06 extends HerokuuAppBaseUrl {
+public class Get06 extends HerokuAppBaseUrl {
     /*
     Given
         https://restful-booker.herokuapp.com/booking/22
@@ -67,6 +67,8 @@ public class Get06 extends HerokuuAppBaseUrl {
         assertEquals("2018-01-01",json.getString("bookingdates.checkin"));
         assertEquals("2019-01-01",json.getString("bookingdates.checkout"));
         assertEquals("Breakfast",json.getString("additionalneeds"));
+
+        //******************3.YOL************************************//
 // SoftAssertion 3 adımda yapılır: ---> testng poma eklenmeli
 
         //1.Adım Softassertion objesi oluşturulur

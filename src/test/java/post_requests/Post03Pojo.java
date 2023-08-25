@@ -1,9 +1,9 @@
 package post_requests;
-import Pojos.JsonPlaceHolderPojo;
+import pojos.JsonPlaceHolderPojo;
 import base_urls.JsonPlaceHolderBaseUrl;
 import io.restassured.response.Response;
 import org.junit.Test;
-import Pojos.JsonPlaceHolderPojo;
+
 import static io.restassured.RestAssured.given;
 import static junit.framework.TestCase.assertEquals;
 public class Post03Pojo extends JsonPlaceHolderBaseUrl {
