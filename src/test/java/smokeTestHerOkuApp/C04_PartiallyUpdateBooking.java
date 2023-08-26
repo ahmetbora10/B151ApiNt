@@ -52,5 +52,7 @@ public class C04_PartiallyUpdateBooking extends HerokuAppBaseUrl {
         assertEquals(200,response.statusCode());
         assertEquals(payload.get("firstname"),actualData.get("firstname"));
         assertEquals(payload.get("lastname"),actualData.get("lastname"));
+
+        //Burada yaptigimiz islem bir yama islemidir. Firstname ve Lastname degistirildi.
     }
 }
